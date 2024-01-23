@@ -827,9 +827,7 @@ header div {
     flex-direction: column;
     align-items: flex-start;
     gap: 24px;
-    .footer-media {
-      width: 264px;
-    }
+    width: 264px;
   }
 }
 
