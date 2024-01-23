@@ -61,7 +61,7 @@ a {
 /* Tablet devices 768 */
 @media screen and (min-width: 768px) {
   .container {
-    width: 736px;
+    width: 768px;
   }
 }
 
@@ -96,6 +96,7 @@ a {
 header div {
   display: flex;
   padding: 0 15px;
+  align-items: center;
 }
 
 .nav-first {
@@ -223,7 +224,6 @@ header div {
 
 .adress {
   font-style: normal;
-  padding: 24px 0;
   margin-right: 0;
   margin-left: auto;
 }
@@ -265,17 +265,17 @@ header div {
 }
 
 /* Mobile devices 320 */ /* Tablet devices 768 */
-/* .section {
+.section {
   padding: 96px 0;
-} */
+}
 
 /* Desctop 1158 */
 
-/* @media screen and (min-width: 1158px) {
+@media screen and (min-width: 1158px) {
   .section {
     padding: 120px 0;
   }
-} */
+}
 
 /* Main page */
 
@@ -452,9 +452,10 @@ header div {
   text-align: center;
 }
 /* Tablet devices 768 */
-
-.target-h {
-  text-align: left;
+@media screen and (min-width: 768px) {
+  .target-h {
+    text-align: left;
+  }
 }
 
 /* Desctop 1158 */
@@ -553,7 +554,7 @@ header div {
 }
 
 .team-box {
-  margin-top: 8px;
+  padding: 32px 0;
   display: flex;
   flex-direction: column;
   row-gap: 8px;
@@ -569,7 +570,7 @@ header div {
 /* Tablet devices 768 */
 @media screen and (min-width: 768px) {
   .team-list-photo {
-    flex-basis: calc((100% - 24px) / 2);
+    width: 264px;
   }
 }
 
@@ -591,7 +592,6 @@ header div {
   line-height: 1.2;
   letter-spacing: 0.4px;
   text-align: center;
-  padding-top: 32px;
 }
 
 .team-par {
@@ -607,7 +607,6 @@ header div {
   list-style-type: none;
   gap: 24px;
   justify-content: center;
-  padding-bottom: 32px;
 }
 
 .link {
@@ -800,13 +799,16 @@ header div {
     flex-direction: row;
     flex-wrap: wrap;
     gap: 72px 24px;
+    padding-left: 108px;
   }
 }
 
 @media screen and (min-width: 1158px) {
   .footer-class .container {
     flex-direction: row;
-    gap: 72px;
+    flex-wrap: nowrap;
+    gap: 0;
+    padding-left: 15px;
   }
 }
 
@@ -825,6 +827,9 @@ header div {
     flex-direction: column;
     align-items: flex-start;
     gap: 24px;
+    .footer-media {
+      width: 264px;
+    }
   }
 }
 
@@ -832,6 +837,8 @@ header div {
   .footer-logo-block {
     align-items: flex-start;
     gap: 17.5px;
+    margin-right: 120px;
+    width: 264px;
   }
 }
 
@@ -856,6 +863,11 @@ header div {
   }
 }
 
+.bestsellers-ill {
+  max-width: 100%;
+  height: auto;
+}
+
 .logo-footer {
   display: inline-block;
   color: #4d5ae5;
@@ -868,10 +880,6 @@ header div {
   text-transform: uppercase;
   text-decoration: none;
   margin-bottom: 17.5px;
-}
-
-footer p {
-  width: 264px;
 }
 
 footer .logo,
@@ -967,7 +975,7 @@ footer .logo,
 
 @media screen and (min-width: 1158px) {
   .footer-div-subscribe {
-    margin-right: 0;
+    margin-left: 80px;
   }
 }
 
