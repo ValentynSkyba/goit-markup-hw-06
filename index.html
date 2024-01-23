@@ -26,12 +26,21 @@
           <a class="logo" href="./index.html"
             >Web<span class="logo-black">Studio</span></a
           >
-          <ul class="nav">
+          <button
+            class="header-menu"
+            type="button"
+            aria-label="header-menu-button">
+            <svg class="header-menu-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-burger"></use>
+            </svg>
+          </button>
+          <ul class="navigation">
             <li><a class="nav-link current" href="./index.html">Studio</a></li>
             <li><a class="nav-link" href="">Portfolio</a></li>
             <li><a class="nav-link" href="">Contacts</a></li>
           </ul>
         </nav>
+
         <!-- Contacts header-->
         <address class="adress">
           <ul class="adress-list">
@@ -126,6 +135,7 @@
           <ul class="team-list">
             <li class="team-list-photo">
               <img
+                class="team-photo-list"
                 src="./images/mark_guerrero.jpg"
                 alt="Mark Guerrero"
                 width="264" />
@@ -322,7 +332,7 @@
       </section>
 
       <!-- 3 Section Our Portfolio + photo https://squoosh.app-->
-      <section class="section-our">
+      <section class="section-portfolio">
         <div class="container">
           <h2 class="portfolio-head">Our Portfolio</h2>
           <ul class="portfolio-ul">
@@ -511,7 +521,9 @@
       </div>
     </footer>
 
-    <!-- Backdrop -->
+    <!-- Backdrop   
+      ДОДАТКОВИЙ КЛАС IS-OPEN -->
+
     <div class="backdrop">
       <div class="modal">
         <button type="button" class="btn-close">
@@ -593,6 +605,65 @@
           <button type="button" class="form-submit-button">Send</button>
         </form>
       </div>
+    </div>
+
+    <!-- MODAL-WINDOW
+        
+                            КЛАС IS-OPEN -->
+
+    <div class="mobile-window">
+      <button class="btn-close" type="button">
+        <svg class="close-cvg" width="8" height="8">
+          <use href="./images/icons.svg#icon-close"></use>
+        </svg>
+      </button>
+      <ul class="menu-items-window">
+        <li><a class="menu-one current" href="./index.html">Studio</a></li>
+        <li><a class="menu-one" href="">Portfolio</a></li>
+        <li><a class="menu-one" href="">Contacts</a></li>
+      </ul>
+      <address class="contakts-window">
+        <ul class="header-contakts">
+          <li>
+            <a class="mail" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+          </li>
+          <li>
+            <a class="tel" href="tel:+110001111111">+11 (000) 111-11-11</a>
+          </li>
+        </ul>
+      </address>
+      <ul class="social-links-modal">
+        <li class="footer-list">
+          <a href="https://www.instagram.com/" target="_blank" class="link">
+            <svg class="icon-team" width="24" height="24">
+              <use href="./images/icons.svg#icon-instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="footer-list">
+          <a href="https://twitter.com/" target="_blank" class="link">
+            <svg class="icon-team" width="24" height="24">
+              <use href="./images/icons.svg#icon-twitter"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="footer-list">
+          <a href="https://www.facebook.com/" target="_blank" class="link">
+            <svg class="icon-team" width="24" height="24">
+              <use href="./images/icons.svg#icon-facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="footer-list">
+          <a href="https://www.linkedin.com/" target="_blank" class="link">
+            <svg class="icon-team" width="24" height="24">
+              <use href="./images/icons.svg#icon-linkedin"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
     </div>
   </body>
 </html>
